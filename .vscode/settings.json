@@ -1,8 +1,8 @@
 {
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true, // Se formatea al momento de guardar
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // define prettier como formateador
   "eslint.validate": [
-    "javascript",
-    "html"
+    "javascript", // Linter valida JS
+    "html" // Linter valida HTML
   ]
 }
