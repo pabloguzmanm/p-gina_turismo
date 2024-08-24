@@ -1,0 +1,14 @@
+.hero {
+  background-image: url('https://via.placeholder.com/1920x600?text=Bienvenido+a+Tu+Destino+Ideal');
+  background-size: cover;
+  color: white;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+}
