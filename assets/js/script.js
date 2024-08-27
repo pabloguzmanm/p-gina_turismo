@@ -14,6 +14,7 @@ buttonCentro.addEventListener('click', () => {
 
 buttonSur.addEventListener('click', () => {
   img.src = './assets/img/sur.jpg';
+});
 //console.log('Archivo js funcionando...');
 const form = document.querySelector('form');
 console.log(form);
