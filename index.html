@@ -88,32 +88,226 @@
       </div>
     </section>
 
+    <!-- FAQ Section -->
+    <div class="w-75 mx-auto mb-5">
+      <h2 class="mb-4">Dudas más comunes</h2>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              <strong>¿Qué incluye un paquete turístico?</strong>
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Los paquetes turísticos suelen incluir transporte (aéreo,
+              terrestre o ambos), alojamiento, traslados desde/hacia el
+              aeropuerto, visitas guiadas, y a veces comidas y actividades. El
+              contenido exacto puede variar según el paquete. Te recomendamos
+              revisar los detalles específicos de cada oferta.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              <strong>¿Puedo personalizar mi paquete turístico?</strong>
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Sí, en la mayoría de los casos ofrecemos la opción de personalizar
+              los paquetes turísticos según tus preferencias. Puedes modificar
+              aspectos como la duración del viaje, el tipo de alojamiento, las
+              actividades y otros servicios adicionales. Ponte en contacto con
+              nosotros para más detalles..
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              <strong>¿Cuál es la política de cancelación?</strong>
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Nuestra política de cancelación depende del proveedor de cada
+              servicio y del tiempo de antelación con el que se realice la
+              cancelación. Generalmente, ofrecemos reembolsos completos si se
+              cancela dentro de un plazo razonable. Te recomendamos consultar
+              los términos específicos al momento de hacer la reserva.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFour"
+              aria-expanded="false"
+              aria-controls="collapseFour"
+            >
+              <strong>¿Es obligatorio comprar un seguro de viaje?</strong>
+            </button>
+          </h2>
+          <div
+            id="collapseFour"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Aunque no es obligatorio, sí recomendamos encarecidamente adquirir
+              un seguro de viaje para protegerte contra posibles imprevistos,
+              como cancelaciones, enfermedades o accidentes durante el viaje.
+              Puedes agregar un seguro de viaje al reservar tu paquete
+              turístico.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFive"
+              aria-expanded="false"
+              aria-controls="collapseFive"
+            >
+              <strong
+                >¿Qué sucede si un tour o actividad se cancela por mal
+                tiempo?</strong
+              >
+            </button>
+          </h2>
+          <div
+            id="collapseFive"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              En caso de que un tour o actividad sea cancelado debido al mal
+              tiempo, haremos todo lo posible para reprogramarlo. Si no es
+              posible, te ofreceremos una actividad alternativa o un reembolso
+              por la actividad cancelada.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Contact Section -->
     <section id="contact" class="bg-light py-5">
       <div class="container">
-        <h2 class="text-center mb-4">Contacto</h2>
-        <form>
-          <div class="row">
-            <div class="col-md-6 mb-3">
-              <label for="name" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="name" required />
-            </div>
-            <div class="col-md-6 mb-3">
-              <label for="email" class="form-label">Correo Electrónico</label>
-              <input type="email" class="form-control" id="email" required />
+        <div class="row justify-content-center">
+          <h2 class="text-center mb-5">Contactanos</h2>
+          <div class="col-md-4">
+            <div id="contentForm">
+              <form>
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="fullName"
+                    id="fullName"
+                    placeholder="Ingrese su nombre"
+                    required
+                  />
+                  <label for="fullName">Nombre</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="email"
+                    id="email"
+                    placeholder="name@example.com"
+                    required
+                  />
+                  <label for="email">Correo Electrónico</label>
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Mensaje</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="4"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-secondary">Enviar</button>
+              </form>
+
             </div>
           </div>
-          <div class="mb-3">
-            <label for="message" class="form-label">Mensaje</label>
-            <textarea
-              class="form-control"
-              id="message"
-              rows="4"
-              required
-            ></textarea>
+
+          <div class="col-md-4 text-center">
+            <address>
+              <strong>Turismo - Tú destino ideal</strong>
+              <br />
+              Av. Libertador Bernardo O'Higgins 1058, Stgo.
+              <br />
+              <abbr title="Phone">Telefono:</abbr>
+              +56 9 5256 5555
+            </address>
+            <address>
+              <strong>Correo Electrónico</strong>
+              <br />
+              <a href="mailto:contacto@tudestinoideal.cl"
+                >contacto@tudestinoideal.cl</a
+              >
+            </address>
           </div>
-          <button type="submit" class="btn btn-primary">Enviar</button>
-        </form>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-5" id="map">
+        <div class="col-8">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4074.8733856131958!2d-70.67710870439737!3d-33.44932423921816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c455c1672875%3A0x23eefddb5cb65c0c!2sAv.%20Libertador%20Bernardo%20O&#39;Higgins%2C%20Santiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1724704580753!5m2!1ses-419!2scl"
+            width="100%"
+            height="400"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </div>
     </section>
 
@@ -121,10 +315,19 @@
     <footer class="bg-dark text-white text-center py-3">
       <p>&copy; 2024 Tu Destino Ideal. Todos los derechos reservados.</p>
     </footer>
+<<<<<<< HEAD
     <!-- SCRIPT BOOTSTRAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
     <!-- SCRIPT PROPIO -->
     <script src="./assets/js/script.js"></script>
+=======
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+>>>>>>> 2ffb130014a3d8f079fa998474562bd65c16472f
   </body>
 </html>
