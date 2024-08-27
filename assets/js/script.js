@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const buttonNorte = document.getElementById('buttonNorte');
 const buttonCentro = document.getElementById('buttonCentro');
 const buttonSur = document.getElementById('buttonSur');
@@ -15,7 +14,6 @@ buttonCentro.addEventListener('click', () => {
 
 buttonSur.addEventListener('click', () => {
   img.src = './assets/img/sur.jpg';
-=======
 //console.log('Archivo js funcionando...');
 const form = document.querySelector('form');
 console.log(form);
@@ -36,5 +34,4 @@ form.addEventListener('submit', function (event) {
         <br><strong>Email: </strong> ${email}
         <br><strong>Mensaje: </strong> ${msg}
   `;
->>>>>>> 2ffb130014a3d8f079fa998474562bd65c16472f
 });
