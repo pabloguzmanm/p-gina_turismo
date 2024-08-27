@@ -41,6 +41,9 @@
               <a class="nav-link" href="#home">Inicio</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#servicios">Servicios</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#gallery">Galería</a>
             </li>
             <li class="nav-item">
@@ -71,7 +74,7 @@
       </div>
     </div>
     <!-- SECCIÓN SERVICIOS PABLO GUZMÁN-->
-    <section class="experiencia seccion-clara">
+    <section id="servicios" class="experiencia seccion-clara">
       <h2 class="text-center mb-4">Nuestros Servicios</h2>
       <div class="container text-center">
         <div class="row">
@@ -148,7 +151,7 @@
     <section id="gallery" class="container my-5">
       <h2 class="text-center mb-4">Galería de Imágenes</h2>
       <div class="row">
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4 mb-4 card">
           <div class="card-body text-center">
             <img
               src="./assets/img/regióndelmaule.jpg"
@@ -156,19 +159,25 @@
               alt="fotografía de región del Maule"
             />
             <h3 class="card-title">Región del Maule</h3>
-            <p class="card-text">
-              <strong>
-                Constitución: Sabores y aromas de la costa del Maule
-              </strong>
+            <p class="card-text mt-2">
+              <strong> Constitución. </strong>
               <br />
+              Sabores y aromas de la costa del Maule.
+            </p>
+            <p class="card-text">
               Piedra de la Iglesia, Balneario de Iloca y Lago Vichuquén
             </p>
-            <button type="button" class="btn btn-block btn-secondary">
+            <button
+              type="button"
+              class="btn btn-block btn-outline-success"
+              data-bs-toggle="modal"
+              data-bs-target="#modalForm"
+            >
               Click aquí
             </button>
           </div>
         </div>
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4 mb-4 card">
           <div class="card-body text-center">
             <img
               src="./assets/img/regióndelaaraucanía.jpg"
@@ -176,20 +185,26 @@
               alt="fotografía de región de la Araucanía"
             />
             <h3 class="card-title">Región de la Araucanía</h3>
-            <p class="card-text">
-              <strong
-                >Parque Nacional Conguillío: Visita uno de los volcanes más
-                activos de Sudamérica
-              </strong>
+
+            <p class="card-text mt-2">
+              <strong> Parque Nacional Conguillío. </strong>
               <br />
+              Visita uno de los volcanes más activos de Sudamérica
+            </p>
+            <p class="card-text">
               Parque Nacional Conguillío, Volcán Llaima y Salto de la Princesa.
             </p>
-            <button type="button" class="btn btn-block btn-secondary">
+            <button
+              type="button"
+              class="btn btn-block btn-outline-success"
+              data-bs-toggle="modal"
+              data-bs-target="#modalForm"
+            >
               Click aquí
             </button>
           </div>
         </div>
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4 mb-4 card">
           <div class="card-body text-center">
             <img
               src="./assets/img/regióndeloslagos.jpg"
@@ -197,20 +212,108 @@
               alt="fotografía de la región de Los Lagos"
             />
             <h3 class="card-title">Región de Los Lagos</h3>
-            <p class="card-text">
-              <strong>
-                Gastronomía, Parques Naturales y más en Puerto Varas
-              </strong>
-              <br />Barrio Patrimonial de Puerto Varas, Parque Nacional Vicente
-              Peréz Rosales y Frutillar.
+            <p class="card-text mt-2">
+              <strong> Frutillar </strong>
+              <br />
+              Gastronomía, Parques Naturales y más.
             </p>
-            <button type="button" class="btn btn-block btn-secondary">
+            <p class="card-text">
+              Barrio Patrimonial de Puerto Varas, Parque Nacional Vicente Peréz
+              Rosales y Frutillar.
+            </p>
+            <button
+              type="button"
+              class="btn btn-block btn-outline-success"
+              data-bs-toggle="modal"
+              data-bs-target="#modalForm"
+            >
               Click aquí
             </button>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="modalForm"
+      tabindex="-1"
+      aria-labelledby="modalFormLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Solicitar Información
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Nombre:</label>
+                <input
+                  type="text"
+                  id="name"
+                  class="form-control"
+                  placeholder="Ingresa tu nombre..."
+                />
+              </div>
+              <div class="mb-3">
+                <label for="correo" class="form-label">Correo:</label>
+                <input
+                  type="email"
+                  id="correo"
+                  class="form-control"
+                  placeholder="Ingresa tu correo..."
+                />
+              </div>
+              <div class="mb-3">
+                <label for="telefono" class="form-label">Teléfono:</label>
+                <input
+                  type="number"
+                  id="telefono"
+                  class="form-control"
+                  placeholder="Ingresa tu teléfono..."
+                />
+              </div>
+              <div class="mb-3">
+                <label>Deseo información de:</label>
+                <select class="form-select" aria-label="Escoge una opción">
+                  <option selected>Escoge una opción</option>
+                  <option value="Constitucion">
+                    Región del Maule - Constitución
+                  </option>
+                  <option value="Conguillio">
+                    Región de la Araucanía - Parque Nacional Conguillío
+                  </option>
+                  <option value="Frutillar">
+                    Región de Los Lagos - Frutillar
+                  </option>
+                </select>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Cancelar
+                </button>
+                <button type="button" class="btn btn-primary">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- FAQ Section -->
     <div class="w-75 mx-auto mb-5">
